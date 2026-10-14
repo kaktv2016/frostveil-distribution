@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "description": "Original inert text assets only, generated locally by prepare:synthetic. No game/runtime files distributed.",
+  "packId": "l4a-synthetic",
+  "defaultVersion": "1.0.1",
+  "channel": "stable",
+  "files": [
+    "notice text",
+    "banner text"
+  ],
+  "rights": "Project-generated original synthetic bytes; sandbox testing only"
+}

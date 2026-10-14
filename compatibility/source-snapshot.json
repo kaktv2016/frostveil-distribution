@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "origin": "kaktv2016/frostveil-launcher",
+  "launcherVersion": "0.1.4",
+  "baseCommit": "5eb2cf773deaaa47b460b17e02926913d856a90b",
+  "state": "Explicit audited local L3/L4-A/L4-B snapshot; not claimed published in launcher Git",
+  "files": [
+    {
+      "path": "src/main/files.ts",
+      "sha256": "823812e4015b5f89b48393d2ef624f657b95f74656f05becbbbcac7c6a756c97"
+    },
+    {
+      "path": "src/main/modpack/schema.ts",
+      "sha256": "5d175e148b178074c10c4606af88538aa9a348160aa98a79c0102396ef4fb1c6"
+    },
+    {
+      "path": "src/main/modpack/trust.ts",
+      "sha256": "74055237a4c2e1f907414f5a4906ffe945c07dcc579487b5074351d6dc659849"
+    },
+    {
+      "path": "src/main/modpack/native-requirements.ts",
+      "sha256": "359a5e5d1e9c87d398ae61cab5fad0b28b6fd445c951f00253c9830bca966117"
+    },
+    {
+      "path": "src/main/distribution/policy.ts",
+      "sha256": "65c48211273704015b7caaafce3332bfff1ea28b7102b11f3ac8efa57d32e107"
+    },
+    {
+      "path": "src/main/distribution/prepare.ts",
+      "sha256": "97a27965207ea2cb5fed693f9c874726d8e864d486693b5a177dd23b2d6d4c99"
+    },
+    {
+      "path": "src/main/installer/metadata.ts",
+      "sha256": "bdd772f78b4331c12156ced9ca0ab683004812e609c1b6e8d105a822edcc001c"
+    },
+    {
+      "path": "src/main/installer/sandbox.ts",
+      "sha256": "e935067fa3505c42b66c0ee8b90e84f294f4ffce889c7b216f5d809f5c363dbe"
+    },
+    {
+      "path": "src/main/installer/synthetic.ts",
+      "sha256": "a991d2dcbbcda0133dd884e5d3ec4c50f1e29a6b85e6390502f920308a2c9043"
+    },
+    {
+      "path": "src/shared/contracts.ts",
+      "sha256": "8eb2fa38c9406a606fd07b05b02991faa56b804a2aac5497441e4455d5a05072"
+    },
+    {
+      "path": "src/shared/modpack-contracts.ts",
+      "sha256": "64eb3ca7327cc3e97e41edf39c1daa5e9733175422d2a8a0675e31f24c3c31ba"
+    },
+    {
+      "path": "src/shared/installer-contracts.ts",
+      "sha256": "1d6c53a54ef89cd143aa7b8a8177da796024524e8e933a688f7d25d5bc97e5c0"
+    },
+    {
+      "path": "src/shared/distribution-contracts.ts",
+      "sha256": "0028b50a9c7caa48dbbb01b9bfd593a71c4b013e25c83ac3a589cd6d49f94bef"
+    }
+  ],
+  "lineEndings": "Canonical LF, matching .gitattributes"
+}

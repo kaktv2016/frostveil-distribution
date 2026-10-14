@@ -1,0 +1,32 @@
+name: Gated local release preparation
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Stable synthetic pack semver; no public Release will be published
+        required: true
+        default: '1.0.1'
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    environment: production-distribution
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.11.1'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run audit
+      - name: Explicit synthetic preparation; ephemeral test key only
+        run: npm run prepare:synthetic
+        env:
+          PACK_VERSION: ${{ inputs.version }}
+      - run: npm run verify -- .artifacts/synthetic
+      - name: Diagnostics only
+        run: cat .artifacts/synthetic/publication-summary.json >> "$GITHUB_STEP_SUMMARY"
+      # No artifact upload, Release, tag, publishing script, production key or secret selection.

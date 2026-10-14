@@ -1,0 +1,16 @@
+node_modules/
+.build/
+.artifacts/
+.local/
+*.pem
+*.key
+*.pfx
+.env*
+*.bin
+*.dll
+*.exe
+*.bsa
+*.esm
+*.esp
+*.esl
+*.zip
