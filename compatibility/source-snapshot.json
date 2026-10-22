@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "origin": "kaktv2016/frostveil-launcher",
-  "launcherVersion": "0.1.4",
+  "launcherVersion": "0.1.5",
   "baseCommit": "5eb2cf773deaaa47b460b17e02926913d856a90b",
-  "state": "Explicit audited local L3/L4-A/L4-B snapshot; not claimed published in launcher Git",
+  "state": "LOCAL UNPUBLISHED Level B Stage A snapshot; publication/source push NOT authorized",
   "files": [
     {
       "path": "src/main/files.ts",
@@ -11,7 +11,7 @@
     },
     {
       "path": "src/main/modpack/schema.ts",
-      "sha256": "5d175e148b178074c10c4606af88538aa9a348160aa98a79c0102396ef4fb1c6"
+      "sha256": "68aec0ac70c99b5633111acc530268ff918e49818dbe66d5b84a6a965a397f7c"
     },
     {
       "path": "src/main/modpack/trust.ts",
@@ -23,7 +23,7 @@
     },
     {
       "path": "src/main/distribution/policy.ts",
-      "sha256": "65c48211273704015b7caaafce3332bfff1ea28b7102b11f3ac8efa57d32e107"
+      "sha256": "307dc4a4744ce719c7160dfd075ffb451c8c79e382cdbdac5fb78330b897a4d1"
     },
     {
       "path": "src/main/distribution/prepare.ts",
@@ -39,11 +39,11 @@
     },
     {
       "path": "src/main/installer/synthetic.ts",
-      "sha256": "a991d2dcbbcda0133dd884e5d3ec4c50f1e29a6b85e6390502f920308a2c9043"
+      "sha256": "d50794bb707eaefb24258a3acc36f8d04c0f8bfd5fd612ce691392114a4566d4"
     },
     {
       "path": "src/shared/contracts.ts",
-      "sha256": "8eb2fa38c9406a606fd07b05b02991faa56b804a2aac5497441e4455d5a05072"
+      "sha256": "d86b7593cd900e1ce2e8a879c67bb5fbc5b407f0b570324906b46b7736039f50"
     },
     {
       "path": "src/shared/modpack-contracts.ts",
@@ -55,7 +55,15 @@
     },
     {
       "path": "src/shared/distribution-contracts.ts",
-      "sha256": "0028b50a9c7caa48dbbb01b9bfd593a71c4b013e25c83ac3a589cd6d49f94bef"
+      "sha256": "c772262147aeb02e914307260dc33f6b02a4b973a2368bd76f5810b3ab99baae"
+    },
+    {
+      "path": "src/main/distribution/level-b.ts",
+      "sha256": "90b1a77c047390cc60616ca67e55b6fff7c27a35e0ca3c4235c212f344d4a7e2"
+    },
+    {
+      "path": "src/main/distribution/publication.ts",
+      "sha256": "a1c506a122c67342c515be6213e14a60c80dda18f9ae6b6785a757ca539a3d99"
     }
   ],
   "lineEndings": "Canonical LF, matching .gitattributes"

@@ -50,7 +50,7 @@ export function validateManifest(raw:unknown,sources:readonly string[]=[]):PackM
  return structuredClone(p) as PackManifest;
 }
 export function assetName(v:unknown):asserts v is string{if(typeof v!=='string'||!/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,150}$/.test(v)||v==='.'||v==='..')throw Error('Invalid asset name');}
-export function releaseBinding(raw:unknown,packVersion:string){const r=object(raw,['owner','repo','tag']);if(r.owner!=='kaktv2016'||r.repo!=='frostveil-distribution'||r.tag!=='pack-v'+packVersion)throw Error('Wrong repository/release tag binding');}
+export function releaseBinding(raw:unknown,packVersion:string){const r=object(raw,['owner','repo','tag']);if(r.owner!=='kaktv2016'||r.repo!=='frostveil-distribution'||r.tag!=='pack-v'+packVersion&&r.tag!=='test-pack-v'+packVersion)throw Error('Wrong repository/release tag binding');}
 export function validateServerProfile(raw:unknown):ServerProfile {
  bounded(raw);const p=object(raw,['schemaVersion','id','version','packId','packVersion','runtime','skseVersion','clientIdentity','generatedAt','expiresAt','source','engineCommit','plugins','archives','limitations']);
  if(p.schemaVersion!==1||p.source!=='offline-skymp-export'||!/^[a-f0-9]{40}$/.test(p.engineCommit))throw Error('Invalid server profile');identifier(p.id);identifier(p.packId);version(p.version);version(p.packVersion);resourceVersion(p.runtime);resourceVersion(p.skseVersion);text(p.clientIdentity);timestamp(p.generatedAt);timestamp(p.expiresAt);if(Date.parse(p.expiresAt)<=Date.parse(p.generatedAt)||Date.parse(p.expiresAt)-Date.parse(p.generatedAt)>7*86400000)throw Error('Invalid snapshot lifetime');

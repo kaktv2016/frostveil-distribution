@@ -10,7 +10,8 @@
     "audit": "node scripts/validate/source.mjs",
     "prepare:synthetic": "node scripts/build/prepare.mjs synthetic",
     "verify": "node scripts/verify/release.mjs",
-    "prepare:offline": "node scripts/build/prepare.mjs offline"
+    "prepare:offline": "node scripts/build/prepare.mjs offline",
+    "level-b:publish": "node scripts/build/publish-level-b.mjs"
   },
   "dependencies": {
     "semver": "7.8.5"
